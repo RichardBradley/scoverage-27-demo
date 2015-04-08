@@ -1,6 +1,7 @@
 This repository demonstrates https://github.com/scoverage/scalac-scoverage-plugin/issues/27
 
 Run:
+
     sbt scoverage:test
 
 Then open `target/scala-2.11/scoverage-report/index.html`
