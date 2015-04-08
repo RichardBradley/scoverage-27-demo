@@ -7,9 +7,8 @@ class Class1Spec
 
   "Class1" should {
 
-    "sayCurrentTimeTwice" in {
-      new Class1().sayCurrentTimeTwice()
-      ok
+    "say hello world" in {
+      new Class1().sayHelloWorld() mustEqual "Hello, World"
     }
   }
 }
