@@ -3,12 +3,19 @@ package myproject
 class Class1 {
 
   def sayHelloWorld(): String = {
+    new Helper().sayHelloWorld()
+  }
 
-    val world = new NamedObject {
-      // This line is covered by tests:
-      override def name = "World"
+  class Helper {
+    def sayHelloWorld(): String = {
+
+      val world = new NamedObject {
+        // This line is covered by tests:
+        override def name = "World"
+      }
+
+      NamedObject.sayHello(world)
     }
 
-    NamedObject.sayHello(world)
   }
 }
